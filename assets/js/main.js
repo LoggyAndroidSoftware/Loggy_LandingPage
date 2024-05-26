@@ -120,9 +120,11 @@ sr.reveal(
           .services_content, .menu_content,
           .app_data, .app_img,
           .contact_data, .contact_button,
-          .footer_content`,
+          .footer_content,
+          .video,
+          .ad_content`,
   {
-    interval: 200
+    interval: 100
   }
 );
 
