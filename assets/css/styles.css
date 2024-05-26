@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   --first-color: #F2AC34;
-  --first-color-alt: #FFEDCD;
+  --first-color-alt: #e54804;
   --title-color: #232323;
   --logo-dark-color: #162328;
   --text-color: #000;
@@ -102,7 +102,7 @@ body.dark-theme {
   --text-color: #e8e8e8;
   --text-color-light: #838385;
   --body-color: #111f24;
-  --container-color: #172a31;
+  --container-color: #496b7e;
   --logo-dark-color: #f1f3f2;
   --shadow-color: rgba(214, 214, 214, 0.1);
 }
