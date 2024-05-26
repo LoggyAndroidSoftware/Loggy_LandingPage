@@ -339,35 +339,13 @@ body.dark-theme {
   justify-self: center;
 }
 
-/*========== SERVICES ==========*/
-.services_container {
-  row-gap: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-.services_content {
-  text-align: center;
-}
-.services_img {
-  width: 64px;
-  height: 64px;
-
-  fill: var(--first-color);
-  margin-bottom: var(--mb-2);
-}
-.services_title {
-  font-size: var(--h3-font-size);
-  color: var(--title-color);
-  margin-bottom: var(--mb-1);
-}
-.services_description {
-  padding: 0 1.5rem;
-}
+/*========== VIDEO ==========*/
 
 .video_content {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
 
 }
 
@@ -385,8 +363,8 @@ body.dark-theme {
 /*========== AD TEAM ==========*/
 .ad_container {
   display: grid;
-  gap: 2ram;
-  grid-template-columns: repeat(2, 2fr);
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
 }
 .ad_content {
@@ -605,7 +583,7 @@ body.dark-theme {
   }
 
   .ad_container {
-    grid-template-columns: repeat(3, 210px);
+    grid-template-columns: repeat(4, 210px);
   }
   .ad_content {
     padding: 1.5rem;
