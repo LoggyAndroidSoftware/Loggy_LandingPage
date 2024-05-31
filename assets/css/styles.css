@@ -340,10 +340,18 @@ body.dark-theme {
 }
 
 /*========== VIDEO ==========*/
+.video_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Ajusta esto a la altura que desees */
+}
 
 .video_content {
   position: relative;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding-top: 56.25%;
 
