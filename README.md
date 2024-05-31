@@ -2,5 +2,5 @@
 
 ## Loggy - Responsive App Landing Page
 
-- Version 2
+- Version 3
 
