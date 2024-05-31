@@ -130,4 +130,58 @@ sr.reveal(
 
 
 
+// Crea una variable para almacenar la instancia del reproductor de YouTube
+var player;
+
+// Esta función crea una instancia de YT.Player
+//centrar instancia de YT.Player en el div con el id youtube-video
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('youtube-video', {
+    height: '390',
+    width: '640',
+    videoId: 'EabpyWfc2vI',
+    playerVars: {
+      autoplay: 1,
+      mute: 1
+    },
+    events: {
+      'onReady': onPlayerReady,
+    },
+  });
+}
+
+
+/*==================== VIDEO AUTO ====================*/
+
+function onPlayerReady(event) {
+  checkIfVideoInView();
+}
+
+function checkIfVideoInView() {
+  var videoElement = document.getElementById('youtube-video');
+
+  var rect = videoElement.getBoundingClientRect();
+  var isInView = (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+
+  if (isInView) {
+    player.playVideo();
+  } else {
+    player.pauseVideo();
+  }
+
+  setTimeout(checkIfVideoInView, 100);
+}
+
+onYouTubeIframeAPIReady();
+
+
+
+
+
 
